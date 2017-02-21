@@ -1,7 +1,7 @@
 'use strict';
 
-window.ESCAPE_KEY_CODE = 27;
-window.ENTER_KEY_CODE = 13;
+var ESCAPE_KEY_CODE = 27;
+var ENTER_KEY_CODE = 13;
 
 // Попап
 var offInvisible = document.querySelector('.setup-open');

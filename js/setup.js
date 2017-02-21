@@ -1,13 +1,21 @@
 'use strict';
 
+<<<<<<< HEAD
 var ESCAPE_KEY_CODE = 27;
 var ENTER_KEY_CODE = 13;
+=======
+
+window.ESCAPE_KEY_CODE = 27;
+window.ENTER_KEY_CODE = 13;
+>>>>>>> 86dc125760f1424add7220a099726ff3cbf54dc6
 
 // Попап
 var offInvisible = document.querySelector('.setup-open');
 var onInvisible = document.querySelector('.setup-close');
 var setup = document.querySelector('.setup');
+
 var setupSubmitDialog = document.querySelector('.setup-submit');
+
 
 offInvisible.addEventListener('click', function () {
   setup.classList.remove('invisible');
@@ -61,6 +69,7 @@ fireballColor.addEventListener('click', function () {
   var colorNum = Math.floor(Math.random() * fireballColors.length);
   fireballColor.style.background = fireballColors [colorNum];
 });
+
 
 // стилизация окончена
 
@@ -126,3 +135,4 @@ function toggleButton(element) {
   var pressed = (element.getAttribute('aria-pressed') === 'true');
   element.setAttribute('aria-pressed', !pressed);
 }
+
